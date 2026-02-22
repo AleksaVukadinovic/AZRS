@@ -54,6 +54,8 @@ Komande
 - `git fetch` - updatuje lokalno stanje informacijama sa remote-a
 - `git push` - gura promene na remote
 
+**Bare** repozitorijum je onaj repozitorijum koje nema radni direktorijum (working directory) tj. sadrzi samo internu Git strukturu (objekte, reference konfiguraciju), ali ne i checkout fajlova koje mozemo direktno da uredjujemo. Ako zelimo da inicijalizujemo bare repozitorijum kazemo `git init --bare` i ovom komandom cemo dobiti samo .git folder koji u sebi ima HEAD, objects, refs i config.
+
 U `.gitignore` stavljamo fajlove i foldere koje zelimo da git ignorise. Treba pisati dobre commitove itd. 
 **Gitflow** je model koji kaze, imamo main granu, imamo development granu, pored toga imamo feature, bugfix, release, hotfix grane… (nebitno)
 
